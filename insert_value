@@ -1,0 +1,10 @@
+void insert(double x, BinaryNode*& t)
+{
+  if (t==NULL)
+    t=new BinaryNOde(x,NuLL,NULL);
+  else if(x<t->element)
+    insert(x,t->left);
+  else if(t->element<x)
+    insert(x,t->right);
+  else;
+}
