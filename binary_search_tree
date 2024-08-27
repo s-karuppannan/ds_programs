@@ -1,0 +1,24 @@
+Struct Node
+{
+  double elements;
+  Node* left;
+  Node* right;
+}
+class BST 
+{ public;
+    BST();
+    BST(const Tree& t);
+    ~BST();
+
+    bool empty() const;
+    double root();
+    BST left();
+    BST right();
+
+    bool search(const double x);
+    void insert (const double x);
+    void remove (const double x);
+
+  private;
+    Node* root;
+  }
